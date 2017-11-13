@@ -1,7 +1,7 @@
 Reactotron
 1 - baixar app
-2 - npm install -g reactotron-cli
-3 - npm i --save-dev reactotron-react-native
+2 - sudo npm install -g reactotron-cli
+3 - sudo npm i --save-dev reactotron-react-native
 
 ***
 import './config/ReactotronConfig';
@@ -27,6 +27,35 @@ ESLint
   }
 2 - get info and coloque no package.json
 3 - npm install
+4 - sudo npm i --save-dev babel-eslint eslint-config-airbnb eslint-plugin-react-native
+5 - create file .eslintrc in folder of App with content:
+                                  {
+                                  "parser": "babel eslint",
+                                  "env": {
+                                      "browser": true,
+                                      "jest": true
+                                    },
+                                    "plugins": [
+                                      "react-native",
+                                      "jsx-a11y",
+                                      "import"
+                                    ],
+                                    "extends": [
+                                      "airbnb",
+                                      "plugin:react-native/all"
+                                    ],
+                                    "rules": {
+                                      "react/jsx-filename-extension": ["error", {"extensions": [".js", ".jsx"]}],
+                                      "global-require": "off",
+                                      "no-console": "off",
+                                      "import/prefer-default-export": "off"
+                                      },
+                                      "globals":{
+                                        "__DEV__": true
+                                      },
+                                  }
+
+
 
 
 full:
