@@ -1,0 +1,41 @@
+Reactotron
+1 - baixar app
+2 - npm install -g reactotron-cli
+3 - npm i --save-dev reactotron-react-native
+
+***
+import './config/ReactotronConfig';
+file ReactotronConfig:
+import Reactotron from 'reactotron-react-native';
+const tron = Reactotron.configure().useReactNative().connect();
+Reactotron.log('log Reactotron Jesus te ama');
+Reactotron.display({name: 'App', preview: 'Who?', value: 'message': important: true});
+
+console.tron = tron;
+
+em app.js
+console.tron.log('log Reactotron in App.js');
+
+
+ESLint
+1 - npm info "eslint-config-airbnb@latest" peerDepedencies
+  {
+  "eslint": "^4.9.0",
+  "eslint-plugin-jsx-a11y": "^6.0.2",
+  "eslint-plugin-import": "^2.7.0",
+  "eslint-plugin-react": "^7.4.0",
+  }
+2 - get info and coloque no package.json
+3 - npm install
+
+
+full:
+"eslint": "^4.9.0",
+"eslint-config-airbnb": "^16.1.0",
+"eslint-plugin-import": "^2.7.0",
+"eslint-plugin-jsx-a11y": "^6.0.2",
+"eslint-plugin-react": "^7.4.0",
+"eslint-plugin-react-native": "^3.1.0",
+"jest": "21.2.1",
+"react-test-renderer": "16.0.0",
+"reactotron-react-native": "^1.12.3"
