@@ -33,7 +33,13 @@ export default class App extends Component<{}> {
     return (
       <ScrollView style={styles.container}>
           <Text style={styles.header}>GoNative App</Text>
-          {this.state.posts.map(post => <Post key={post.id} post={post}/>)}
+          <Post />
+          <Post />
+          <Post />
+          <Post />
+          <Post />
+          <Post />
+          <Post />
       </ScrollView>
 
     );

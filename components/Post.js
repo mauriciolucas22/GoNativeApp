@@ -1,5 +1,6 @@
 import {View, Text, StyleSheet} from 'react-native';
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 const Post = ({post}) => (
   <View style={styles.container}>
@@ -9,6 +10,16 @@ const Post = ({post}) => (
 
   </View>
 );
+
+Post.defaultProps = {
+  post:
+    {
+      id: 0,
+      title: 'Aprendendo React Native',
+      autor: 'Mauricio Lucas',
+      content: 'Content'
+    },
+};
 
 const styles = StyleSheet.create({
   container: {
