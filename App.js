@@ -26,6 +26,18 @@ export default class App extends Component<{}> {
         autor: 'Mauricio Lucas',
         content: 'Content'
       },
+      {
+        id: 1,
+        title: 'Aprendendo React Native',
+        autor: 'Mauricio Lucas',
+        content: 'Content'
+      },
+      {
+        id: 2,
+        title: 'Aprendendo React Native',
+        autor: 'Mauricio Lucas',
+        content: 'Content'
+      },
     ],
   };
 
@@ -33,13 +45,7 @@ export default class App extends Component<{}> {
     return (
       <ScrollView style={styles.container}>
           <Text style={styles.header}>GoNative App</Text>
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
+          {this.state.posts.map(post => <Post key={post.id} post={post} />)}
       </ScrollView>
 
     );
@@ -52,10 +58,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#EE7777',
     padding: 40,
 
+
   },
 
   header: {
-    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    textAlign: 'center',
     backgroundColor: '#FFFFFF',
     color: '#333333',
     shadowColor: '#DA6C6C',

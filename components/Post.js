@@ -17,7 +17,7 @@ Post.defaultProps = {
       id: 0,
       title: 'Aprendendo React Native',
       autor: 'Mauricio Lucas',
-      content: 'Content'
+      content: 'Content Content Content Content Content Content Content Content Content Content Content'
     },
 };
 
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     shadowRadius: 5,
     shadowOffset: {x: 0, y: 2},
     shadowOpacity: 100,
-    marginTop: 20
+    marginTop: 20,
   },
   title: {
     color: '#333333',
